@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Meaning Test - Score</title>
+    <style>
+      /* Add your CSS styles here */
+    </style>
+  </head>
+  <body>
+    <h1>Word Meaning Test - Score</h1>
+    <p>Your final score: <%= score %></p>
+    <h2>Word List and Remarks</h2>
+    <table>
+      <tr>
+        <th>Word</th>
+        <th>Meaning</th>
+        <th>Remarks</th>
+      </tr>
+      <% wordsData.forEach((word, index) => { %>
+      <tr>
+        <td><%= word.word %></td>
+        <td><%= word.meaning %></td>
+        <td>
+          <%= userAnswers[index] === word.word.toLowerCase() ? 'Correct' :
+          'Incorrect' %>
+        </td>
+      </tr>
+      <% }); %>
+    </table>
+    <form action="/" method="GET">
+      <button type="submit">Retake Test</button>
+    </form>
+  </body>
+</html>
