@@ -58,7 +58,8 @@ label {
   margin: 10px 0;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -67,7 +68,12 @@ input[type="text"] {
   margin-bottom: 15px;
 }
 
+input[type="number"] {
+  margin-bottom: 0px;
+}
+
 button {
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #333;
   color: white;

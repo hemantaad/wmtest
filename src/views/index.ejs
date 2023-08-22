@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="/styles.css" />
   </head>
   <body>
-    <h1>Word Meaning Test</h1>
+    <h1>HemzMat Vocab Test</h1>
 
     <div class="container">
       <div class="question-indicator">
@@ -13,7 +13,7 @@
         <p><%= wordIndex + 1 %> / <%= wordsData.length %></p>
       </div>
       <p><%= wordsData[wordIndex].meaning %></p>
-      <form action="/test" method="POST">
+      <form action="/" method="POST">
         <input type="hidden" name="wordIndex" value="<%= wordIndex %>" />
         <input
           type="hidden"

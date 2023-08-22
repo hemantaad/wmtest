@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Word</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Add New Word</h1>
+    <div class="container">
+      <form action="/add-word" method="POST">
+        <label for="word">Word:</label>
+        <input type="text" id="word" name="word" required />
+        <br />
+        <label for="meaning">Meaning:</label>
+        <input type="text" id="meaning" name="meaning" required />
+        <br />
+        <label for="set">Set:</label>
+        <input type="number" id="set" name="set" required />
+        <br />
+        <button type="submit">Add Word</button>
+      </form>
+    </div>
+  </body>
+</html>
